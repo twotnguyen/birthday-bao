@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+  <meta name="theme-color" content="#0b0b1a" />
+  <meta
+    name="description"
+    content="Một món quà sinh nhật được làm riêng cho Bảo. 🎂"
+  />
+  <meta property="og:title" content="Cho Bảo 🎂" />
+  <meta
+    property="og:description"
+    content="Một món quà sinh nhật được làm riêng cho Bảo. 🎂"
+  />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Cho Bảo 🎂" />
+  <meta
+    name="twitter:description"
+    content="Một món quà sinh nhật được làm riêng cho Bảo. 🎂"
+  />
+  <title>Cho Bảo 🎂</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <main id="story" aria-label="Chuyện sinh nhật của Bảo">
+
+    <!-- ============ 1. Birthday Lock ============ -->
+    <section class="section section--lock" id="lock">
+      <div class="particles" id="lock-particles" aria-hidden="true"></div>
+      <div class="wrap lock-content">
+        <p class="lock-emoji">🎁</p>
+        <h1 class="lock-title">Có một món quà dành riêng cho Bảo</h1>
+        <p class="lock-sub">Nhưng trước tiên… chứng minh bạn thật sự là Bảo đã.</p>
+
+        <div class="pin-box" id="pin-box" role="group" aria-label="Nhập ngày sinh">
+          <label class="sr-only" for="birth-day">Ngày sinh</label>
+          <input
+            id="birth-day"
+            class="pin"
+            type="text"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            maxlength="2"
+            autocomplete="off"
+            placeholder="DD"
+            aria-label="Ngày"
+          />
+          <span class="pin-sep" aria-hidden="true">/</span>
+          <label class="sr-only" for="birth-month">Tháng sinh</label>
+          <input
+            id="birth-month"
+            class="pin"
+            type="text"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            maxlength="2"
+            autocomplete="off"
+            placeholder="MM"
+            aria-label="Tháng"
+          />
+        </div>
+
+        <button id="lock-btn" class="big-btn" type="button">Mở quà 🎁</button>
+        <p id="lock-msg" class="lock-msg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ============ 2. Happy Birthday ============ -->
+    <section class="section section--hero" id="hero" data-animate>
+      <div class="particles" id="hero-particles" aria-hidden="true"></div>
+      <div class="wrap">
+        <span class="hero-happy reveal" style="--d: .1s">HAPPY</span>
+        <span class="hero-birthday reveal" style="--d: .4s">BIRTHDAY</span>
+        <span class="hero-name reveal" style="--d: .9s">BẢO 🎂</span>
+        <p class="hero-sub reveal" style="--d: 1.35s">
+          15.08 — Ngày thế giới có thêm một người tên Bảo.
+        </p>
+      </div>
+      <div class="scroll-hint reveal" style="--d: 1.9s" aria-hidden="true">
+        <span>Vuốt lên để xem tiếp ↑</span>
+      </div>
+    </section>
+
+    <!-- ============ 3. Một chút về cái tên “Bảo” ============ -->
+    <section class="section section--name" id="name" data-animate>
+      <div class="wrap">
+        <p class="story-big reveal" style="--d: 0s">Bảo.</p>
+        <p class="reveal sub" style="--d: .35s">Một cái tên nghe đã thấy quý.</p>
+
+        <div class="name-lines">
+          <p class="reveal" style="--d: .7s">
+            <span class="glow">Bảo</span> vệ những điều mình yêu.
+          </p>
+          <p class="reveal" style="--d: .9s">
+            <span class="glow">Bảo</span> toàn những nụ cười.
+          </p>
+          <p class="reveal" style="--d: 1.1s">
+            Trân <span class="glow">bảo</span> những người thật lòng.
+          </p>
+        </div>
+
+        <p class="reveal sub" style="--d: 1.45s">Và quan trọng nhất…</p>
+        <p class="reveal important" style="--d: 1.75s">
+          Đừng quên xem chính mình là một <span class="glow">bảo vật</span>.
+        </p>
+        <p class="reveal quote" style="--d: 2.15s">
+          “Vì Bảo vốn đã là một điều rất quý giá rồi.” ❤️
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 4. Hạnh Phúc ============ -->
+    <section class="section section--happiness" id="happiness" data-animate>
+      <div class="wrap">
+        <h2 class="h-title reveal" style="--d: .1s">HẠNH PHÚC</h2>
+        <p class="reveal sub" style="--d: .6s">
+          Người ta thường chúc nhau hạnh phúc.
+        </p>
+
+        <div class="split">
+          <div class="reveal split-col" style="--d: 1s">
+            <span class="split-word">HẠNH</span>
+            <p class="split-text">Là niềm vui mình biết giữ.</p>
+          </div>
+          <div class="reveal split-col" style="--d: 1.35s">
+            <span class="split-word">PHÚC</span>
+            <p class="split-text">Là những điều tốt đẹp mình biết gieo.</p>
+          </div>
+        </div>
+
+        <p class="reveal sub" style="--d: 1.8s">
+          Nhưng hạnh phúc không phải lúc nào cũng là điều tự nhiên tìm đến.
+        </p>
+        <p class="reveal final-line" style="--d: 2.2s">
+          <span class="glow">Hạnh</span> từ lòng mình.<br />
+          <span class="glow">Phúc</span> từ điều mình gieo.
+        </p>
+        <p class="reveal sub soft" style="--d: 2.6s">
+          Mong tuổi mới của Bảo có thật nhiều cả hai.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 5. Những điều mình mong Bảo sẽ có ============ -->
+    <section class="section section--wishes" id="wishes" data-animate>
+      <div class="wrap">
+        <h2 class="section-label reveal" style="--d: .1s">
+          Những điều mình mong Bảo sẽ có
+        </h2>
+        <ul class="wish-list">
+          <li class="reveal" style="--d: .35s">Có một người để thương. ❤️</li>
+          <li class="reveal" style="--d: .6s">Có một nơi luôn muốn trở về. 🏡</li>
+          <li class="reveal" style="--d: .85s">Có những người thật lòng ở bên cạnh. 🫂</li>
+          <li class="reveal" style="--d: 1.1s">
+            Có một ước mơ khiến mỗi sáng thức dậy đều thấy đáng mong chờ. ✨
+          </li>
+          <li class="reveal" style="--d: 1.35s">Có đủ can đảm để chọn điều mình muốn.</li>
+          <li class="reveal" style="--d: 1.6s">
+            Và đủ bình yên để không phải chạy theo những điều không thuộc về mình.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 6. Tuổi mới ============ -->
+    <section class="section section--age" id="age" data-animate>
+      <div class="particles" id="age-particles" aria-hidden="true"></div>
+      <div class="wrap">
+        <h2 class="h-title reveal" style="--d: .1s">TUỔI MỚI.</h2>
+        <p class="reveal age-line" style="--d: .6s">Không cần hoàn hảo hơn.</p>
+        <p class="reveal age-line" style="--d: .8s">Chỉ cần vui hơn.</p>
+        <p class="reveal age-line" style="--d: 1s">Không cần có tất cả.</p>
+        <p class="reveal age-line" style="--d: 1.2s">
+          Chỉ cần có những điều thật sự quan trọng.
+        </p>
+        <p class="reveal quote big" style="--d: 1.7s">
+          “Mong tuổi mới sẽ đối xử với Bảo thật dịu dàng.”
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 7. Lá thư sinh nhật ============ -->
+    <section class="section section--letter" id="letter" data-animate>
+      <div class="wrap">
+        <div class="letter reveal" style="--d: .1s">
+          <p class="hand">Bảo à,</p>
+          <p>
+            Chúc tuổi mới của Bảo có đủ niềm vui để mỗi ngày đều đáng nhớ, đủ
+            may mắn để những điều tốt đẹp tìm đến đúng lúc, và đủ mạnh mẽ để đi
+            qua những ngày không như ý.
+          </p>
+          <p>
+            Mong Bảo luôn tìm được người khiến mình muốn ở bên, những nơi khiến
+            mình muốn quay lại và những khoảnh khắc khiến mình nghĩ:
+          </p>
+          <p class="letter-quote">“Ừ, cuộc sống này cũng đáng yêu thật.”</p>
+          <p>
+            Nếu một ngày hạnh phúc chưa kịp tìm đến, thì mong Bảo vẫn biết giữ
+            niềm vui cho mình và tiếp tục gieo những điều tốt đẹp.
+          </p>
+          <p class="hand strong">Hạnh từ lòng mình.<br />Phúc từ điều mình gieo.</p>
+          <p class="sign">Happy Birthday, Bảo. ❤️</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. Điều bất ngờ cuối cùng ============ -->
+    <section class="section section--final" id="final" data-animate>
+      <div class="particles" id="final-particles" aria-hidden="true"></div>
+
+      <div class="final-intro wrap">
+        <p class="reveal" style="--d: .2s">Khoan…</p>
+        <p class="reveal" style="--d: 1.1s">Hình như vẫn còn một thứ.</p>
+        <button id="surprise-btn" class="big-btn reveal" style="--d: 1.7s" type="button">
+          Nhấn vào đây 🎁
+        </button>
+      </div>
+
+      <div class="final-reveal wrap">
+        <p class="f-title">HAPPY BIRTHDAY</p>
+        <p class="f-name">BẢO 🎂</p>
+        <p class="f-date">15.08</p>
+        <p class="f-lead">Chúc Bảo một tuổi mới:</p>
+        <div class="f-lines">
+          <p class="reveal--late">Hạnh luôn ở trong lòng.</p>
+          <p class="reveal--late">Phúc luôn ở trên đường đi.</p>
+          <p class="reveal--late">Bình an luôn ở bên cạnh.</p>
+        </div>
+        <p class="f-close reveal--late">Và luôn có những người thật lòng yêu quý Bảo. ❤️</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="confetti-layer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
